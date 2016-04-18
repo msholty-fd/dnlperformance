@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+test-results.xml
+dist/
+!/bower_components/*/build/
+npm-debug.log
+test-results/
+*.swp
+.jsbeautifyrc
+npm-debug.log*
+phantomjsdriver.log
+bower_components
+/bundles
+/temp

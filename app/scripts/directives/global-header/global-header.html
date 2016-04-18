@@ -1,0 +1,22 @@
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">D&L Performance</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" ng-repeat="item in globalHeader.menuItems" ng-href="{{item.link}}">{{item.title}}</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">D&L Performance</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" ng-repeat="item in globalHeader.menuItems" href="{{item.link}}">{{item.title}}</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+    </main>
+</div>
