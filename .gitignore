@@ -1,7 +1,6 @@
 node_modules
 .DS_Store
 test-results.xml
-dist/
 !/bower_components/*/build/
 npm-debug.log
 test-results/
@@ -14,3 +13,4 @@ bower_components
 /temp
 .sass-cache
 .tmp
+build/

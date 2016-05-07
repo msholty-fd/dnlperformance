@@ -1,0 +1,11 @@
+import './tasks/browserify';
+import './tasks/build';
+import './tasks/clean';
+import './tasks/connect';
+import './tasks/copy';
+import './tasks/default';
+import './tasks/lint';
+import './tasks/sass';
+import './tasks/serve';
+import './tasks/watch';
+import './tasks/open';
