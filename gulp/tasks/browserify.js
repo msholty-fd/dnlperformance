@@ -25,7 +25,7 @@ gulp.task('browserify', function() {
 	let bundler = null;
 	let opts = null;
 	const baseOpts = {
-		entries: ['./app/scripts/app.js'],
+		entries: ['./app/app.js'],
 		fullPaths: false,
 		extensions: ['.js', '.html', '.json'],
 		paths: ['./node_modules', './app']
