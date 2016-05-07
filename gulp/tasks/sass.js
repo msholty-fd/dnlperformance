@@ -14,9 +14,7 @@ import cssnano from 'gulp-cssnano';
 gulp.task('sass', function() {
 	return gulp.src(config.src.sass)
 		.pipe(sourcemaps.init())
-		.pipe(sass({
-			includePaths: ['./node_modules/hoff/sass']
-		}))
+		.pipe(sass())
 		// .pipe(scssLint({'config': './.scss-lint.yml'}))
 		.pipe(base64())
 		.pipe(autoprefixer())

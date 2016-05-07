@@ -1,19 +1,14 @@
 import angular from 'angular';
 
 import 'angular-ui-router';
+import './components';
+import './home';
 
-export default angular.module('subaru', [
-    'subaru.components',
-    'subaru.home',
+angular.module('dnl', [
+    'dnl.components',
+    'dnl.home',
     'ui.router'
 ])
 .config(/* @ngInject */function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
-
-    $stateProvider
-        .state('home', {
-            url: '/',
-            controller: 'HomeCtrl',
-            templateUrl: 'scripts/home/home.html'
-        });
 });
