@@ -12,9 +12,9 @@
         </div>
     </header>
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
+        <span class="mdl-layout-title">D&L Performance</span>
         <nav class="mdl-navigation">
-            <a ng-repeat="item in globalHeader.menuItems" class="mdl-navigation__link" ng-href="{{item.href}}">{{item.title}}</a>
+            <a ng-repeat="item in globalHeader.menuItems" ng-click="globalHeader.menuItemClicked()" class="mdl-navigation__link" ng-href="{{item.href}}">{{item.title}}</a>
         </nav>
     </div>
     <main class="mdl-layout__content">

@@ -12,6 +12,7 @@ export default angular.module('dnl.home', [
         .state('home', {
             url: '/',
             controller: HomeController,
+            controllerAs: 'home',
             template
         });
 });
