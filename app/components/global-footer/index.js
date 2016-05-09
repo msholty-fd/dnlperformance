@@ -4,11 +4,8 @@ import GlobalFooterController from './global-footer-controller';
 
 export default angular.module('dnl.components.global-footer', [])
 
-.directive('globalFooter', function() {
-    return {
-        restrict: 'E',
-        controllerAs: 'globalFooter',
-        controller: GlobalFooterController,
-        template
-    };
+.component('globalFooter', {
+    controllerAs: 'globalFooter',
+    controller: GlobalFooterController,
+    template
 });
