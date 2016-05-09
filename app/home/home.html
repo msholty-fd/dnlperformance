@@ -1,20 +1,19 @@
-<div class="jumbotron">
-    <h3>D&L Performance</h3>
-</div>
-<div class="">
+<div>
     <div class="schedule-appointment-card mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Schedule an appointment</h2>
         </div>
-        <div>
-            <button id="demo-menu-lower-right" class="mdl-button mdl-js-button">
-                Select Year: <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-                <li class="mdl-menu__item" ng-repeat="year in home.availableYears">{{year}}</li>
-            </ul>
+        <label class="mdl-" for="vehicle-year">Year</label>
+        <select class="mdl-textfield__input mdl-textfield__input--select" id="vehicle-year" ng-model="home.selectedYear" ng-options="year for year in home.availableYears"></select>
+        <label class="mdl-" for="vehicle-model">Model</label>
+        <select class="mdl-textfield__input mdl-textfield__input--select" id="vehicle-model" ng-model="home.selectedModel" ng-options="model for model in home.availableModels"></select>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="vehicle-mileage">
+            <label class="mdl-textfield__label" for="current-mileage">Current Mileage</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
-        <div>Select Model</div>
-        <div>Current Mileage</div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            Go!
+        </button>
     </div>
 </div>
