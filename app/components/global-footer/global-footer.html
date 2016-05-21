@@ -10,9 +10,9 @@
         </ul>
     </div>
     <div class="mdl-mini-footer__right-section">
-        <a href="www.twitter.com/dnlperformance"><button class="mdl-mini-footer__social-btn social-btn__twitter"></button></a>
-        a
-        <button class="mdl-mini-footer__social-btn"></button>
-        <button class="mdl-mini-footer__social-btn"></button>
+        <button ng-repeat="button in globalFooter.socialButtons"
+            class="mdl-mini-footer__social-btn"
+            ng-class="button.type"
+            ng-click="globalFooter.redirect(button.url)"></button>
     </div>
 </footer>

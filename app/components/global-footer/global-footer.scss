@@ -1,6 +1,23 @@
-.social-btn__twitter {
-    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png');
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
+.mdl-mini-footer__social-btn {
     background-position: center center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: transparent;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &.twitter {
+        background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png');
+    }
+
+    &.gplus {
+        background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_24dp.png');
+    }
+
+    &.facebook {
+        background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_white_24dp.png');
+    }
 }
