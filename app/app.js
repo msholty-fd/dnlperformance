@@ -9,6 +9,11 @@ angular.module('dnl', [
     'dnl.home',
     'ui.router'
 ])
-.config(/* @ngInject */function($stateProvider, $urlRouterProvider) {
+
+.config(function($urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
+})
+
+.config(function($locationProvider) {
+    $locationProvider.html5Mode(true);
 });
