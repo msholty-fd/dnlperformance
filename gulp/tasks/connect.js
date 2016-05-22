@@ -6,6 +6,8 @@ import gulp from 'gulp';
 
 import connect from 'gulp-connect';
 
+import historyApiFallback from 'connect-history-api-fallback';
+
 gulp.task('connect', function() {
 	connect.server({
 		root: [config.build],
@@ -15,7 +17,7 @@ gulp.task('connect', function() {
 		},
 		https: true,
 		middleware: () => {
-			return [cors()];
+			return [historyApiFallback(), cors()];
 		}
 	});
 });
