@@ -3,27 +3,31 @@
         <div aria-expanded="false" role="button" class="mdl-layout__drawer-button">
             <i class="material-icons"></i>
         </div>
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">D&amp;L Performance</span>
-            <!-- Add spacer, to align navigation to the right -->
+        <div class="top-row">
             <div class="mdl-layout-spacer"></div>
-            <!-- Navigation. We hide it in small screens. -->
+            <div>
+                <a href ui-sref="contact" class="address">
+                    <div>4647 NW 6th St.</div>
+                    <div>Building G</div>
+                    <div>Gainesville FL, 32609</div>
+                    <div>Call us at (555) 555-5555</div>
+                </a>
+            </div>
+        </div>
+        <div class="mdl-layout__header-row">
+            <a href ui-sref="home" class="logo">
+                <span class="mdl-layout-title">D&amp;L Performance</span>
+            </a>
+            <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href ui-sref="{{item.state}}" ng-repeat="item in globalHeader.menuItems">{{ item.title }}</a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Title</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href ui-sref="{{item.state}}" ng-repeat="item in globalHeader.menuItems">{{ item.title }}</a>
         </nav>
     </div>
 </div>
