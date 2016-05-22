@@ -5,15 +5,15 @@ export default class GlobalFooterController {
         this.socialButtons = [
             {
                 type: 'twitter',
-                url: 'www.twitter.com/dnlperformance'
+                url: 'https://www.twitter.com/dnlperformance'
             },
             {
                 type: 'facebook',
-                url: 'www.twitter.com/dnlperformance'
+                url: 'https://www.facebook.com/DL-Performance-706771426015879/'
             },
             {
                 type: 'gplus',
-                url: 'www.twitter.com/dnlperformance'
+                url: 'https://www.twitter.com/dnlperformance'
             }
         ];
     }
