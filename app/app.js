@@ -1,6 +1,7 @@
 import angular from 'angular';
 
 import 'angular-ui-router';
+
 import './components';
 import './home';
 import './contact';
