@@ -1,0 +1,18 @@
+.mdl-layout--fixed-header {
+    & .top-row {
+        display: flex;
+        margin: 15px;
+    }
+    & .address {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & .logo {
+        text-decoration: none;
+        color: #fff;
+    }
+}
