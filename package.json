@@ -1,10 +1,10 @@
 {
-  "name": "fanduel-ui",
+  "name": "dnl",
   "version": "0.0.0",
   "main": "app/app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fanduel/ui.git"
+    "url": "https://github.com/msholty-fd/dnlperformance"
   },
   "git": {
     "scripts": {
