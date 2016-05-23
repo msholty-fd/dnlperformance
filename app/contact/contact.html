@@ -3,6 +3,10 @@
     height="450"
     allowfullscreen
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6rUtcMnOf2r8k_aCHGckeHjzgwuPJyKo
-        &q=D%26L+Performance+Gainesville+Subaru+Specialist's">
+    ng-src="{{contact.trustSrc(contact.mapUrl)}}">
 </iframe>
+
+<h2>Hours of operation</h2>
+<ul>
+    <li ng-repeat="dayHours in contact.placeDetails.opening_hours.weekday_text">{{dayHours}}</li>
+</ul>
