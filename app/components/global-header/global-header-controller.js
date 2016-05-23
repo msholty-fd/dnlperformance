@@ -2,8 +2,11 @@ export default class GlobalHeaderController {
     constructor() {
         this.showDrawer = false;
         this.menuItems = [{
-            href: '/contact',
+            state: 'contact',
             title: 'Contact'
+        }, {
+            state: 'about-us',
+            title: 'About Us'
         }];
     }
 }
