@@ -1,0 +1,17 @@
+.mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('cars.jpg') center / cover;
+}
+
+.schedule-appointment-card {
+    align-self: flex-end;
+    flex: 1;
+    width: 310px;
+}
+
+@media (max-width: 414px) {
+    .schedule-appointment-card {
+        width: 100%;
+    }
+}
