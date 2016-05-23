@@ -1,10 +1,16 @@
 import angular from 'angular';
-import ContactController from './contact-controller';
-import template from './contact.html';
+import 'angular-sanitize';
 import 'angular-ui-router';
 
+import '../components/google-api';
+
+import ContactController from './contact-controller';
+import template from './contact.html';
+
 export default angular.module('dnl.contact', [
-    'ui.router'
+    'ui.router',
+    'dnl.components.google-api',
+    'ngSanitize'
 ])
 
 .config(function($stateProvider) {
