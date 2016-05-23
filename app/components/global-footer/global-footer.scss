@@ -21,3 +21,12 @@
         background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_white_24dp.png');
     }
 }
+
+@media (max-width: 414px) {
+    .mdl-mini-footer__right-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
