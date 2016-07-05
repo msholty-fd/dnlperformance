@@ -1,0 +1,13 @@
+.testimonials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .testimonial {
+        margin: 10px;
+        height: 370px;
+        .mdl-card__title {
+            height: 100px;
+        }
+    }
+}
