@@ -1,5 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
+import 'angular-ui-bootstrap';
 
 import '../components/appointment-scheduler';
 import '../components/testimonials';
@@ -10,10 +11,12 @@ import template from './home.html';
 export default angular.module('dnl.home', [
     'ui.router',
     'dnl.components.appointment-scheduler',
-    'dnl.components.testimonials'
+    'dnl.components.testimonials',
+    'ui.bootstrap'
 ])
 
-.config( /* @ngInject */ function($urlRouterProvider, $stateProvider) {
+.config( function($urlRouterProvider, $stateProvider) {
+    'ngInject';
     $stateProvider
         .state('home', {
             url: '/',
