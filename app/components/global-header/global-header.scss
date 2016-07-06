@@ -1,33 +1,27 @@
-.global-header {
+global-header {
     position: absolute;
     width: 100%;
-
     .mdl-layout__header {
-        background-color: transparent;
-        box-shadow: none;
+        border-radius: 0 0 10px 10px;
     }
-
+    .global-header {
+        padding: 0 100px;
+    }
     .logo-link {
-        width: 400px;
-        position: absolute;
-        height: 174px;
-        margin-left: 100px;
+        height: 100px;
+        width: 297px;
     }
-
     .logo {
-        height: 174px;
-        width: 400px;
+        height: 100px;
+        width: 297px;
     }
-
     & .top-row {
         display: flex;
         margin: 15px;
     }
-
     & .address {
         color: #fff;
         text-decoration: none;
-
         &:hover {
             cursor: pointer;
             text-decoration: underline;

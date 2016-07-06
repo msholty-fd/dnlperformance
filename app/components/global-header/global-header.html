@@ -1,12 +1,9 @@
 <div class="mdl-layout--fixed-header global-header">
     <header class="mdl-layout__header">
-        <a href ui-sref="home" class="logo-link">
-            <img class="logo" ng-src="logo.jpg">
-        </a>
-        <div aria-expanded="false" role="button" class="mdl-layout__drawer-button">
-            <i class="material-icons"></i>
-        </div>
         <div class="top-row">
+            <a href ui-sref="home" class="logo-link">
+                <img class="logo" ng-src="logo.jpg">
+            </a>
             <div class="mdl-layout-spacer"></div>
             <div>
                 <a href ui-sref="contact" class="address">
@@ -24,10 +21,4 @@
             </nav>
         </div>
     </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href ui-sref="{{item.state}}" ng-repeat="item in globalHeader.menuItems">{{ item.title }}</a>
-        </nav>
-    </div>
 </div>
