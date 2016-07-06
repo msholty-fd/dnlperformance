@@ -1,13 +1,28 @@
-.mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('cars.jpg') center / cover;
-}
+appointment-scheduler {
+    display: flex;
+    justify-content: flex-end;
 
-.schedule-appointment-card {
-    align-self: flex-end;
-    flex: 1;
-    width: 310px;
+    .schedule-appointment-card {
+        .mdl-card__title {
+          color: #fff;
+          height: 176px;
+          background: url('cars.jpg') center / cover;
+        }
+
+        .mdl-card__body {
+            margin: 10px;
+        }
+
+        .mdl-button {
+            width: 100%;
+        }
+
+        .schedule-appointment-card {
+            align-self: flex-end;
+            flex: 1;
+            width: 310px;
+        }
+    }
 }
 
 @media (max-width: 414px) {
