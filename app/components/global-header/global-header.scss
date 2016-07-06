@@ -1,5 +1,4 @@
 .global-header {
-    color: #000;
     position: absolute;
     width: 100%;
 
@@ -8,21 +7,30 @@
         box-shadow: none;
     }
 
+    .logo-link {
+        width: 400px;
+        position: absolute;
+        height: 174px;
+        margin-left: 100px;
+    }
+
+    .logo {
+        height: 174px;
+        width: 400px;
+    }
+
     & .top-row {
         display: flex;
         margin: 15px;
     }
 
     & .address {
-
+        color: #fff;
         text-decoration: none;
+
         &:hover {
+            cursor: pointer;
             text-decoration: underline;
         }
-    }
-
-    & .logo {
-        text-decoration: none;
-        color: #fff;
     }
 }

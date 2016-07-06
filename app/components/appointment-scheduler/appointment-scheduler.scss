@@ -1,6 +1,7 @@
 appointment-scheduler {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    top: 30%;
 
     .schedule-appointment-card {
         .mdl-card__title {

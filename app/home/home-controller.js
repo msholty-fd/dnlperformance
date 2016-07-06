@@ -1,16 +1,29 @@
 export default class HomeController {
     constructor() {
-        this.myInterval = 5000;
-        this.noWrapSlides = false;
-        this.active = 0;
-        this.carouselSlides = [{
+        this.activeSlideIndex = 0;
+        this.slides = [{
             id: 1,
-            image: 'logo/1.jpg',
-            text: 'Your local Gainesville Subaru specialist'
+            image: 'logo/3.jpg',
+            title: 'Gainesville\'s Premiere Subaru Specialists',
+            tagline: 'The One-Stop Shop For All Your Subaru Needs'
         }, {
             id: 2,
-            image: 'logo/2.jpg',
-            text: 'Another image'
+            image: 'logo/17.jpg',
+            title: 'Another image'
         }];
+    }
+
+    get activeSlide() {
+        return this.slides[this.activeSlideIndex % this.slides.length];
+    }
+
+    nextSlide() {
+        this.activeSlideIndex++;
+    }
+
+    previousSlide() {
+        if (this.activeSlideIndex > 0) {
+            this.activeSlideIndex--;
+        }
     }
 }

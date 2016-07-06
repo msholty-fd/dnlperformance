@@ -1,13 +1,17 @@
-<div class="home">
-    <uib-carousel active="home.active" interval="home.myInterval" no-wrap="home.noWrapSlides">
-        <uib-slide ng-repeat="slide in home.carouselSlides track by slide.id" index="slide.id">
-            <img ng-src="{{slide.image}}" class="homepage-slide">
-            <div class="carousel-caption">
-                <h4>Slide {{slide.id}}</h4>
-                <p>{{slide.text}}</p>
-            </div>
-        </uib-slide>
-    </uib-carousel>
-    <appointment-scheduler></appointment-scheduler>
+<div class="home-container" ng-style="{ 'background-image': 'url(' + home.activeSlide.image + ')' }">
+    <div class="home page">
+        <div class="slide-show-container">
+            <h2 class="title">{{ home.activeSlide.title }}</h2>
+            <h3 class="tagline">{{ home.activeSlide.tagline }}</h3>
+            <button class="slide-show-control previous mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="home.previousSlide()">
+                <i class="material-icons">play_arrow</i>
+            </button>
+            <button class="slide-show-control next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="home.nextSlide()">
+                <i class="material-icons">play_arrow</i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="testimonials-container">
     <testimonials></testimonials>
 </div>
