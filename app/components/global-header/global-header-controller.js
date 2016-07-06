@@ -5,7 +5,7 @@ export default class GlobalHeaderController {
             state: 'contact',
             title: 'Contact'
         }, {
-            state: 'about-us',
+            state: 'about',
             title: 'About Us'
         }];
     }

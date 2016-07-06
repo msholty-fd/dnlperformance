@@ -2,7 +2,6 @@ import angular from 'angular';
 import 'angular-ui-router';
 
 import '../components/appointment-scheduler';
-import '../components/testimonials';
 
 import HomeController from './home-controller';
 import template from './home.html';
