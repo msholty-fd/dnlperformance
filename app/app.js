@@ -30,4 +30,12 @@ angular.module('dnl', [
 
 .config(function($locationProvider) {
     $locationProvider.html5Mode(true);
+})
+
+.run(function($rootScope, $state) {
+    'ngInject';
+
+    $rootScope.$on('$stateChangeSuccess', function() {
+        $rootScope.currentStateName = $state.current.name;
+    });
 });

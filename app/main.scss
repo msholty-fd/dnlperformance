@@ -5,11 +5,16 @@
 
 .ui-view-container {
     height: 100%;
+    padding: 15px;
+    padding-top: 194px;
+    &.home {
+        padding-top: 0;
+    }
 }
 
 .page {
     display: flex;
     flex: 1;
-    padding: 174px 15px 15px;
+    padding: 15px;
     flex-direction: column;
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-indigo.min.css" />
     <link rel="stylesheet" href="app.css" />
-    <link rel="icon" type="image/png" href="http://dnlperformance.com/wp-content/uploads/2013/02/dfav.jpg" />
+    <link rel="icon" type="image/jpg" href="http://dnlperformance.com/wp-content/uploads/2013/02/dfav.jpg" />
 </head>
 
 <body ng-app="dnl" class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base mdl-layout__container">
@@ -23,7 +23,8 @@
     <![endif]-->
     <div class="global-container mdl-layout mdl-js-layout">
         <global-header></global-header>
-        <div ui-view class="ui-view-container"></div>
+        <home-carousel ng-if="currentStateName === 'home'" class="home-carousel-container"></home-carousel>
+        <div ui-view class="ui-view-container" ng-class="currentStateName"></div>
         <global-footer></global-footer>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
