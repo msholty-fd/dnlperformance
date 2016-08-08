@@ -1,13 +1,32 @@
 .testimonials-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    overflow-x: scroll;
 
     .testimonial {
         margin: 10px;
         height: 370px;
+        min-width: 250px;
         .mdl-card__title {
-            height: 100px;
+            max-height: 120px;
+            height: 120px;
+
+            .avatar {
+                width: 76px;
+                border-radius: 1000px;
+                &.default {
+                    background-image: url('default-avatar.png');
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 76px;
+                    height: 76px;
+                }
+            }
+        }
+
+        .mdl-card__supporting-text {
+            overflow-y: scroll;
         }
     }
 }

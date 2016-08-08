@@ -1,0 +1,12 @@
+<div class="carousel-image-container" ng-style="{ 'background-image': 'url(' + homeCarousel.activeSlide.image + ')' }">
+    <div class="slide-show-container">
+        <h2 class="title">{{ homeCarousel.activeSlide.title }}</h2>
+        <h3 class="tagline">{{ homeCarousel.activeSlide.tagline }}</h3>
+        <button class="slide-show-control previous mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="homeCarousel.previousSlide()">
+            <i class="material-icons">play_arrow</i>
+        </button>
+        <button class="slide-show-control next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="homeCarousel.nextSlide()">
+            <i class="material-icons">play_arrow</i>
+        </button>
+    </div>
+</div>

@@ -13,7 +13,7 @@ export default class GlobalFooterController {
             },
             {
                 type: 'gplus',
-                url: 'https://www.twitter.com/dnlperformance'
+                url: 'https://plus.google.com/111279510024015588573/about'
             }
         ];
     }

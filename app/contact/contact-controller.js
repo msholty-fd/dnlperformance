@@ -6,7 +6,6 @@ export default class ContactController {
         this.apiKey = apiKey;
         this.$sce = $sce;
         this.DNLGApi = DNLGApi;
-        //this.PLACES_API_PATH = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&key=${apiKey}`;
 
         this.DNLGApi.getPlaceDetails().then((response) => {
             this.placeDetails = response.data.result;
