@@ -8,6 +8,13 @@ import connect from 'gulp-connect';
 
 import historyApiFallback from 'connect-history-api-fallback';
 
+import proxy from 'http-proxy-middleware';
+
+const apiProxy = proxy('/wam', {
+    target: 'http://localhost:3000',
+    rejectUnauthorized: false
+});
+
 gulp.task('connect', function() {
 	connect.server({
 		root: [config.build],
@@ -17,7 +24,7 @@ gulp.task('connect', function() {
 		},
 		https: true,
 		middleware: () => {
-			return [historyApiFallback(), cors()];
+			return [historyApiFallback(), cors(), apiProxy];
 		}
 	});
 });
