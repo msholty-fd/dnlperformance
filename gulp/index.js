@@ -4,6 +4,7 @@ import './tasks/clean';
 import './tasks/connect';
 import './tasks/copy';
 import './tasks/default';
+import './tasks/deploy';
 import './tasks/lint';
 import './tasks/sass';
 import './tasks/serve';
