@@ -5,6 +5,7 @@ import 'angular-ui-router';
 import './components';
 import './home';
 import './contact';
+import ServicesModule from './services';
 import aboutModule from './about';
 
 import NotFoundTemplate from './404.html';
@@ -13,6 +14,7 @@ angular.module('dnl', [
     'dnl.components',
     'dnl.home',
     'dnl.contact',
+    ServicesModule.name,
     aboutModule.name,
     'ui.router'
 ])

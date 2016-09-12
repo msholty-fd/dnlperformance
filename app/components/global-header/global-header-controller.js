@@ -1,5 +1,5 @@
 export default class GlobalHeaderController {
-    constructor() {
+    constructor(DNLGApi) {
         this.showDrawer = false;
         this.menuItems = [{
             state: 'contact',
@@ -7,6 +7,15 @@ export default class GlobalHeaderController {
         }, {
             state: 'about',
             title: 'About Us'
+        }, {
+            state: 'services',
+            title: 'Maintenance and Services'
         }];
+
+        this.DNLGApi = DNLGApi;
+
+        this.DNLGApi.getPlaceDetails().then((response) => {
+            this.placeDetails = response.data.result;
+        });
     }
 }

@@ -3,12 +3,12 @@ export default class HomeCarouselController {
         this.activeSlideIndex = 0;
         this.slides = [{
             id: 1,
-            image: 'http://d9fsetxygehvw.cloudfront.net/assets/logo/3.jpg',
+            image: 'https://d9fsetxygehvw.cloudfront.net/assets/logo/3-min.jpg',
             title: 'Gainesville\'s Premiere Subaru Specialists',
             tagline: 'The One-Stop Shop For All Your Subaru Needs'
         }, {
             id: 2,
-            image: 'http://d9fsetxygehvw.cloudfront.net/assets/logo/17.jpg',
+            image: 'https://d9fsetxygehvw.cloudfront.net/assets/logo/17-min.jpg',
             title: 'Another image'
         }];
     }
