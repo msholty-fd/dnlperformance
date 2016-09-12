@@ -12,10 +12,17 @@ global-header {
     & .top-row {
         display: flex;
         margin: 15px;
+        align-items: center;
+        justify-content: center;
     }
     & .address {
-        color: #fff;
-        text-decoration: none;
+        position: absolute;
+        right: 15px;
+
+        &__text {
+            color: #fff;
+            text-decoration: none;
+        }
         &:hover {
             cursor: pointer;
             text-decoration: underline;
