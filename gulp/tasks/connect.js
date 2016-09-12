@@ -16,15 +16,16 @@ const apiProxy = proxy('/wam', {
 });
 
 gulp.task('connect', function() {
-	connect.server({
-		root: [config.build],
-		port: 9000,
-		livereload: {
-			port: config.LIVERELOAD_PORT
-		},
-		https: true,
-		middleware: () => {
-			return [historyApiFallback(), cors(), apiProxy];
-		}
-	});
+    connect.server({
+        root: [config.build],
+        port: 9000,
+        fallback: `${config.build}/index.html`,
+        livereload: {
+            port: config.LIVERELOAD_PORT
+        },
+        https: true,
+        middleware: () => {
+            return [historyApiFallback(), cors(), apiProxy];
+        }
+    });
 });
