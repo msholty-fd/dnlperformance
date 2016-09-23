@@ -1,4 +1,6 @@
 .contact {
-    width: 800px;
-    margin: auto;
+    @media only screen and (max-width: 1080px) {
+        width: 800px;
+        margin: auto;
+    }
 }
