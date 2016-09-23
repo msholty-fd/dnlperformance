@@ -2,18 +2,18 @@ import angular from 'angular';
 
 import 'angular-ui-router';
 
-import './components';
-import './home';
-import './contact';
+import componentsModule from './components';
+import homeModule from './home';
+import contactModule from './contact';
 import ServicesModule from './services';
 import aboutModule from './about';
 
 import NotFoundTemplate from './404.html';
 
 angular.module('dnl', [
-    'dnl.components',
-    'dnl.home',
-    'dnl.contact',
+    componentsModule.name,
+    homeModule.name,
+    contactModule.name,
     ServicesModule.name,
     aboutModule.name,
     'ui.router'
