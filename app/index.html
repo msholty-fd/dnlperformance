@@ -17,12 +17,13 @@
     <link rel="icon" type="image/jpg" href="http://dnlperformance.com/wp-content/uploads/2013/02/dfav.jpg" />
 </head>
 
-<body ng-app="dnl" class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base mdl-layout__container">
+<body ng-app="dnl" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="global-container mdl-layout mdl-js-layout">
         <global-header></global-header>
+        <global-header-drawer class="mdl-layout__drawer"></global-header-drawer>
         <home-carousel ng-if="currentStateName === 'home'" class="home-carousel-container"></home-carousel>
         <div ui-view class="ui-view-container" ng-class="currentStateName"></div>
         <global-footer></global-footer>
